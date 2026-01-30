@@ -94,8 +94,8 @@ If you're curious about systems programming, I highly recommend this exercise:
 
 You'll gain perspective on abstraction, performance trade-offs, and the beautiful complexity hiding beneath every line of code you write.
 
-The repository with my full implementation is available—check it out, break it, improve it, and see what you learn!
+This is the repository with my full implementation, check it out, break it, improve it, and see what you learn!
 
 ---
 
-*What low-level projects have taught you surprising lessons? I'd love to hear about your experiences in the comments below.*
+*What low-level projects have taught you surprising lessons? I'd love to hear about your experiences in the [comments](https://github.com/sethigris/calc/discussions/1)*
