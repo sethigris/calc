@@ -1,8 +1,12 @@
 # Built a Calculator in Assembly and Orchestrated it with Rust
-- *Development Environment*: Linux (Linux Mint).
-- *Disclaimer*: For Windows developers who want to test the code, I will advise to use wsl 2.0 or download assembly programming language for windows.
+
 
 When I first started learning x86-64 assembly, I wanted to build something practical and very basic—a simple arithmetic calculator. What I didn't expect was how much I'd learn about the relationship between low-level and high-level programming by creating a Rust wrapper to compile and run my assembly code.
+
+## Development Environment
+**Note**: This project was developed on Linux (Linux Mint specifically). The assembly code uses Linux syscalls and the ELF64 executable format.
+
+**For Windows developers**: If you want to test this code, I recommend using WSL 2.0 (Windows Subsystem for Linux), which provides a full Linux environment on Windows. Alternatively, you can adapt the assembly code for Windows by using MASM or NASM with Windows-specific syscalls and the PE executable format.
 
 ## The Assembly Calculator
 
@@ -14,6 +18,7 @@ The calculator itself is pure x86-64 assembly—no libraries, no abstractions, j
 - **System calls**: Direct interaction with the Linux kernel for I/O operations
 
 The most challenging part? Writing the `int_to_string` function. In Rust, I'd just use `format!()` or `.to_string()`. In assembly, I had to divide by 10 repeatedly, store remainders, reverse the digit order, and handle negative numbers as a special case. It gave me a visceral appreciation for what compilers do behind the scenes.
+
 Below is the image of the simple arithmetic calculator
 ![Screenshot](./calc.png)
 
