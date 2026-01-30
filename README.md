@@ -20,7 +20,7 @@ The calculator itself is pure x86-64 assembly—no libraries, no abstractions, j
 The most challenging part? Writing the `int_to_string` function. In Rust, I'd just use `format!()` or `.to_string()`. In assembly, I had to divide by 10 repeatedly, store remainders, reverse the digit order, and handle negative numbers as a special case. It gave me a visceral appreciation for what compilers do behind the scenes.
 
 Below is the image of the simple arithmetic calculator
-![Screenshot](./calc.png)
+![Screenshot](./img/calc.png)
 
 
 ## Enter Rust: The Orchestra Conductor
